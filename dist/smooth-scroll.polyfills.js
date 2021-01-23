@@ -372,7 +372,7 @@
 				anchor: anchor.id
 			},
 			document.title,
-			anchor === document.documentElement ? '#top' : '#' + anchor.id
+			anchor === document.documentElement ? '#' : '#' + anchor.id
 		);
 
 	};
@@ -596,7 +596,7 @@
 			} else {
 				anchor = document.querySelector(hash);
 			}
-			anchor = !anchor && hash === '#top' ? document.documentElement : anchor;
+			anchor = !anchor && hash === '#' ? document.documentElement : anchor;
 
 			// If anchored element exists, scroll to it
 			if (!anchor) return;
